@@ -1,0 +1,36 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 17</title>
+    <script lang="JavaScript">
+        function tab()
+        {
+            var num, i, tab ="", resultado;
+
+            num = parseInt(document.frm.num.value);
+            i = 1;
+
+            for (i=1; i<=10; ++i)
+
+            {       
+                resultado = num*i;
+                tab += "<center>" + num +" * " + i + " = "  + resultado + "<br>"+ "</center>";     
+            }
+            document.getElementById("a").innerHTML = tab;
+        }
+
+        
+    </script>
+</head>
+<body>
+    <form name="frm">
+        <center>
+        <input type="text" name="num" size="5" value="0"><br>
+        <input type="button" value="Tabuada" name="a" onclick="tab();">
+        </center>
+    </form>
+
+    <p id="a"></p>
+    
+</body>
+</html>
